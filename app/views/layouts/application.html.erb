@@ -43,11 +43,15 @@
     </script>
   </head>
 
-  <body class="min-h-screen flex flex-col">
-    <%= render 'shared/navbar' %>
-    <main class="flex-grow">
-      <%= yield %>
-    </main>
-    <%= render 'shared/footer' %>
+  <body class="min-h-screen relative">
+    <div class="flex">
+      <%= render 'shared/footer' %>
+      <div class="flex-1 ml-24">
+        <%= render 'shared/navbar' %>
+        <main class="flex-grow">
+          <%= yield %>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
