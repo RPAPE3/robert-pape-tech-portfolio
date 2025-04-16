@@ -45,12 +45,12 @@
 
   <body class="min-h-screen relative">
     <div class="flex">
-      <%= render 'shared/footer' %>
-      <div class="flex-1 ml-24">
+      <div class="">
         <%= render 'shared/navbar' %>
         <main class="flex-grow">
           <%= yield %>
         </main>
+        <%= render 'shared/footer' %>
       </div>
     </div>
   </body>
