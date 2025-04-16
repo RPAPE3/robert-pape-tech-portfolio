@@ -44,10 +44,10 @@
   </head>
 
   <body class="min-h-screen relative">
-    <div class="flex">
-      <div class="">
+    <div class="">
+      <div class="flex-1">
         <%= render 'shared/navbar' %>
-        <main class="flex-grow">
+        <main class="flex-grow" style="place-content: center;">
           <%= yield %>
         </main>
         <%= render 'shared/footer' %>
